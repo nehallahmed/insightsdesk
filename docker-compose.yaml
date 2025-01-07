@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin 
+      POSTGRES_DB: mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:7.8
+    container_name: pgadmin
+    user: "5050:5050"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80" 
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    platform: linux/x86_64
+
+volumes:
+  postgres_data:
+  pgadmin_data:

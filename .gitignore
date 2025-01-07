@@ -1,0 +1,6 @@
+# ignore csv files
+*.csv
+venv/
+data/
+__pycache__
+.env

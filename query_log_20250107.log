@@ -1,0 +1,243 @@
+2025-01-07 14:54:56,286 - database_query_system - INFO - Processing New Question: What is the name of the product having this barcode 5732~AAA0001~44?
+2025-01-07 14:55:42,381 - database_query_system - INFO - Processing New Question: What is the name of the product having this barcode 5732~AAA0001~44?
+2025-01-07 14:55:43,437 - database_query_system - INFO - Query Classification - Input: What is the name of the product having this barcode 5732~AAA0001~44? - Is DB Related: True
+2025-01-07 14:55:44,804 - database_query_system - INFO - Generated SQL Query: SELECT product_name FROM products WHERE product_id IN (SELECT product_id FROM barcodes WHERE barcode = '5732~AAA0001~44');
+2025-01-07 14:55:44,805 - database_query_system - INFO - Executing SQL Query: SELECT product_name FROM products WHERE product_id IN (SELECT product_id FROM barcodes WHERE barcode = '5732~AAA0001~44');
+2025-01-07 14:55:45,362 - database_query_system - INFO - Query Execution Successful - Result Shape: (1, 1)
+2025-01-07 14:55:46,680 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 14:55:46,680 - database_query_system - INFO - Question Processing Complete
+2025-01-07 15:02:49,598 - database_query_system - INFO - Processing New Question: Hello. What is the weather today
+2025-01-07 15:02:50,631 - database_query_system - INFO - Query Classification - Input: Hello. What is the weather today - Is DB Related: False
+2025-01-07 15:02:50,636 - database_query_system - INFO - Calling Tavily API for query: Hello. What is the weather today
+2025-01-07 15:02:55,854 - database_query_system - INFO - Tavily API call successful
+2025-01-07 15:02:55,854 - database_query_system - INFO - Non-DB Query - Tavily Response Used
+2025-01-07 15:02:55,856 - database_query_system - INFO - Question Processing Complete
+2025-01-07 15:07:27,297 - database_query_system - INFO - Processing New Question: Hello. Can you please share the total count of products 
+2025-01-07 15:07:28,678 - database_query_system - INFO - Query Classification - Input: Hello. Can you please share the total count of products  - Is DB Related: True
+2025-01-07 15:07:29,529 - database_query_system - INFO - Generated SQL Query: SELECT COUNT(*) FROM products;
+2025-01-07 15:07:29,530 - database_query_system - INFO - Executing SQL Query: SELECT COUNT(*) FROM products;
+2025-01-07 15:07:29,540 - database_query_system - INFO - Query Execution Successful - Result Shape: (1, 1)
+2025-01-07 15:07:30,544 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 15:07:30,545 - database_query_system - INFO - Question Processing Complete
+2025-01-07 15:08:13,588 - database_query_system - INFO - Processing New Question: what about the total count for barcodes
+2025-01-07 15:08:15,896 - database_query_system - INFO - Query Classification - Input: what about the total count for barcodes - Is DB Related: True
+2025-01-07 15:08:16,797 - database_query_system - INFO - Generated SQL Query: SELECT COUNT(*) FROM barcodes;
+2025-01-07 15:08:16,798 - database_query_system - INFO - Executing SQL Query: SELECT COUNT(*) FROM barcodes;
+2025-01-07 15:08:17,046 - database_query_system - INFO - Query Execution Successful - Result Shape: (1, 1)
+2025-01-07 15:08:17,797 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 15:08:17,798 - database_query_system - INFO - Question Processing Complete
+2025-01-07 15:09:06,629 - database_query_system - INFO - Processing New Question: I want to see the first 5 rows for barcodes
+2025-01-07 15:09:07,652 - database_query_system - INFO - Query Classification - Input: I want to see the first 5 rows for barcodes - Is DB Related: True
+2025-01-07 15:09:08,574 - database_query_system - INFO - Generated SQL Query: SELECT * FROM barcodes LIMIT 5;
+2025-01-07 15:09:08,576 - database_query_system - INFO - Executing SQL Query: SELECT * FROM barcodes LIMIT 5;
+2025-01-07 15:09:08,586 - database_query_system - INFO - Query Execution Successful - Result Shape: (5, 9)
+2025-01-07 15:09:16,088 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 15:09:16,089 - database_query_system - INFO - Question Processing Complete
+2025-01-07 15:59:15,319 - database_query_system - INFO - Processing New Question: Hello. I need to know the total count of barcodes
+2025-01-07 15:59:16,704 - database_query_system - INFO - Query Classification - Input: Hello. I need to know the total count of barcodes - Is DB Related: True
+2025-01-07 15:59:17,711 - database_query_system - INFO - Generated SQL Query: SELECT COUNT(*) FROM barcodes;
+2025-01-07 15:59:17,712 - database_query_system - INFO - Executing SQL Query: SELECT COUNT(*) FROM barcodes;
+2025-01-07 15:59:17,847 - database_query_system - INFO - Query Execution Successful - Result Shape: (1, 1)
+2025-01-07 15:59:18,625 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 15:59:18,626 - database_query_system - INFO - Question Processing Complete
+2025-01-07 15:59:28,242 - database_query_system - INFO - Processing New Question: What is the weather like today
+2025-01-07 15:59:30,985 - database_query_system - INFO - Query Classification - Input: What is the weather like today - Is DB Related: False
+2025-01-07 15:59:30,986 - database_query_system - INFO - Calling Tavily API for query: What is the weather like today
+2025-01-07 15:59:36,147 - database_query_system - INFO - Tavily API call successful
+2025-01-07 15:59:36,147 - database_query_system - INFO - Non-DB Query - Tavily Response Used
+2025-01-07 15:59:36,148 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:00:05,433 - database_query_system - INFO - Processing New Question: tell me the weather in karachi 
+2025-01-07 16:00:06,451 - database_query_system - INFO - Query Classification - Input: tell me the weather in karachi  - Is DB Related: False
+2025-01-07 16:00:06,454 - database_query_system - INFO - Calling Tavily API for query: tell me the weather in karachi 
+2025-01-07 16:00:10,581 - database_query_system - INFO - Tavily API call successful
+2025-01-07 16:00:10,581 - database_query_system - INFO - Non-DB Query - Tavily Response Used
+2025-01-07 16:00:10,582 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:00:42,171 - database_query_system - INFO - Processing New Question: i love u. do u love me
+2025-01-07 16:00:43,096 - database_query_system - INFO - Query Classification - Input: i love u. do u love me - Is DB Related: False
+2025-01-07 16:00:43,098 - database_query_system - INFO - Calling Tavily API for query: i love u. do u love me
+2025-01-07 16:00:46,845 - database_query_system - INFO - Tavily API call successful
+2025-01-07 16:00:46,846 - database_query_system - INFO - Non-DB Query - Tavily Response Used
+2025-01-07 16:00:46,847 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:20:26,099 - database_query_system - INFO - Processing New Question: What is the name of the product having this barcode 5732~AAA0001~44?
+2025-01-07 16:20:27,328 - database_query_system - INFO - Query Classification - Input: What is the name of the product having this barcode 5732~AAA0001~44? - Is DB Related: True
+2025-01-07 16:20:30,015 - database_query_system - INFO - Generated SQL Query: ```sql
+WITH BarcodeProduct AS (
+    SELECT
+        p.product_name,
+        b.barcode
+    FROM
+        products p
+    JOIN barcodes b ON p.product_id = b.product_id
+    WHERE
+        b.barcode = '5732~AAA0001~44'
+)
+SELECT
+    product_name
+FROM
+    BarcodeProduct;
+```
+2025-01-07 16:20:30,016 - database_query_system - INFO - Executing SQL Query: ```sql
+WITH BarcodeProduct AS (
+    SELECT
+        p.product_name,
+        b.barcode
+    FROM
+        products p
+    JOIN barcodes b ON p.product_id = b.product_id
+    WHERE
+        b.barcode = '5732~AAA0001~44'
+)
+SELECT
+    product_name
+FROM
+    BarcodeProduct;
+```
+2025-01-07 16:20:30,026 - database_query_system - ERROR - Query Execution Failed: Error executing query: (psycopg2.errors.SyntaxError) syntax error at or near "```"
+LINE 1: ```sql
+        ^
+
+[SQL: ```sql
+WITH BarcodeProduct AS (
+    SELECT
+        p.product_name,
+        b.barcode
+    FROM
+        products p
+    JOIN barcodes b ON p.product_id = b.product_id
+    WHERE
+        b.barcode = '5732~AAA0001~44'
+)
+SELECT
+    product_name
+FROM
+    BarcodeProduct;
+```]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-07 16:20:44,628 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 16:20:44,629 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:21:25,704 - database_query_system - INFO - Processing New Question: Can you please list down the count for each product category 
+2025-01-07 16:21:26,857 - database_query_system - INFO - Query Classification - Input: Can you please list down the count for each product category  - Is DB Related: True
+2025-01-07 16:21:29,108 - database_query_system - INFO - Generated SQL Query: ```sql
+WITH ProductCounts AS (
+    SELECT 
+        p.category_names,
+        COUNT(p.product_id) AS product_count
+    FROM 
+        products p
+    GROUP BY 
+        p.category_names
+)
+SELECT 
+    *
+FROM 
+    ProductCounts
+ORDER BY 
+    product_count DESC;
+```
+2025-01-07 16:21:29,110 - database_query_system - INFO - Executing SQL Query: ```sql
+WITH ProductCounts AS (
+    SELECT 
+        p.category_names,
+        COUNT(p.product_id) AS product_count
+    FROM 
+        products p
+    GROUP BY 
+        p.category_names
+)
+SELECT 
+    *
+FROM 
+    ProductCounts
+ORDER BY 
+    product_count DESC;
+```
+2025-01-07 16:21:29,115 - database_query_system - ERROR - Query Execution Failed: Error executing query: (psycopg2.errors.SyntaxError) syntax error at or near "```"
+LINE 1: ```sql
+        ^
+
+[SQL: ```sql
+WITH ProductCounts AS (
+    SELECT 
+        p.category_names,
+        COUNT(p.product_id) AS product_count
+    FROM 
+        products p
+    GROUP BY 
+        p.category_names
+)
+SELECT 
+    *
+FROM 
+    ProductCounts
+ORDER BY 
+    product_count DESC;
+```]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-07 16:21:43,288 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 16:21:43,289 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:25:32,989 - database_query_system - INFO - Processing New Question: What is the name of the product having this barcode 5732~AAA0001~44?
+2025-01-07 16:25:34,546 - database_query_system - INFO - Query Classification - Input: What is the name of the product having this barcode 5732~AAA0001~44? - Is DB Related: True
+2025-01-07 16:25:36,328 - database_query_system - INFO - Generated SQL Query: SELECT p.product_name FROM products p JOIN barcodes b ON p.product_id = b.product_id WHERE b.barcode = '5732~AAA0001~44';
+2025-01-07 16:25:36,329 - database_query_system - INFO - Executing SQL Query: SELECT p.product_name FROM products p JOIN barcodes b ON p.product_id = b.product_id WHERE b.barcode = '5732~AAA0001~44';
+2025-01-07 16:25:36,511 - database_query_system - INFO - Query Execution Successful - Result Shape: (1, 1)
+2025-01-07 16:25:37,621 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 16:25:37,622 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:26:21,973 - database_query_system - INFO - Processing New Question: Can you please tell me the count of each category?
+2025-01-07 16:26:23,027 - database_query_system - INFO - Query Classification - Input: Can you please tell me the count of each category? - Is DB Related: True
+2025-01-07 16:26:23,988 - database_query_system - INFO - Generated SQL Query: SELECT category_names, COUNT(*) AS category_count FROM products GROUP BY category_names;
+2025-01-07 16:26:23,990 - database_query_system - INFO - Executing SQL Query: SELECT category_names, COUNT(*) AS category_count FROM products GROUP BY category_names;
+2025-01-07 16:26:24,008 - database_query_system - INFO - Query Execution Successful - Result Shape: (421, 2)
+2025-01-07 16:26:34,740 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 16:26:34,741 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:27:34,411 - database_query_system - INFO - Processing New Question: How many unique product IDs do we have?
+2025-01-07 16:27:35,495 - database_query_system - INFO - Query Classification - Input: How many unique product IDs do we have? - Is DB Related: True
+2025-01-07 16:27:36,504 - database_query_system - INFO - Generated SQL Query: SELECT COUNT(DISTINCT product_id) FROM products;
+2025-01-07 16:27:36,505 - database_query_system - INFO - Executing SQL Query: SELECT COUNT(DISTINCT product_id) FROM products;
+2025-01-07 16:27:36,511 - database_query_system - INFO - Query Execution Successful - Result Shape: (1, 1)
+2025-01-07 16:27:37,574 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 16:27:37,575 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:28:24,004 - database_query_system - INFO - Processing New Question: what is the most expensive product?
+2025-01-07 16:28:24,945 - database_query_system - INFO - Query Classification - Input: what is the most expensive product? - Is DB Related: True
+2025-01-07 16:28:25,917 - database_query_system - INFO - Generated SQL Query: SELECT product_name, MAX(product_maximum_retail_price) FROM products;
+2025-01-07 16:28:25,919 - database_query_system - INFO - Executing SQL Query: SELECT product_name, MAX(product_maximum_retail_price) FROM products;
+2025-01-07 16:28:25,928 - database_query_system - ERROR - Query Execution Failed: Error executing query: (psycopg2.errors.GroupingError) column "products.product_name" must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT product_name, MAX(product_maximum_retail_price) FROM ...
+               ^
+
+[SQL: SELECT product_name, MAX(product_maximum_retail_price) FROM products;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-07 16:28:31,773 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 16:28:31,774 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:30:19,569 - database_query_system - INFO - Processing New Question: What is the name of the product having this barcode 5732~AAA0001~44?
+2025-01-07 16:30:20,664 - database_query_system - INFO - Query Classification - Input: What is the name of the product having this barcode 5732~AAA0001~44? - Is DB Related: True
+2025-01-07 16:30:22,029 - database_query_system - INFO - Generated SQL Query: SELECT product_name FROM products WHERE product_id = (SELECT product_id FROM barcodes WHERE barcode = '5732~AAA0001~44');
+2025-01-07 16:30:22,029 - database_query_system - INFO - Executing SQL Query: SELECT product_name FROM products WHERE product_id = (SELECT product_id FROM barcodes WHERE barcode = '5732~AAA0001~44');
+2025-01-07 16:30:22,257 - database_query_system - INFO - Query Execution Successful - Result Shape: (1, 1)
+2025-01-07 16:30:23,322 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 16:30:23,323 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:30:57,895 - database_query_system - INFO - Processing New Question: What is the most expensive product?
+2025-01-07 16:30:59,673 - database_query_system - INFO - Query Classification - Input: What is the most expensive product? - Is DB Related: True
+2025-01-07 16:31:01,034 - database_query_system - INFO - Generated SQL Query: SELECT product_name, product_maximum_retail_price FROM products WHERE product_maximum_retail_price = (SELECT MAX(product_maximum_retail_price) FROM products);
+2025-01-07 16:31:01,035 - database_query_system - INFO - Executing SQL Query: SELECT product_name, product_maximum_retail_price FROM products WHERE product_maximum_retail_price = (SELECT MAX(product_maximum_retail_price) FROM products);
+2025-01-07 16:31:01,046 - database_query_system - INFO - Query Execution Successful - Result Shape: (2, 2)
+2025-01-07 16:31:03,350 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 16:31:03,351 - database_query_system - INFO - Question Processing Complete
+2025-01-07 16:31:55,590 - database_query_system - INFO - Processing New Question: What is the date today?
+2025-01-07 16:31:56,506 - database_query_system - INFO - Query Classification - Input: What is the date today? - Is DB Related: False
+2025-01-07 16:31:56,508 - database_query_system - INFO - Calling Tavily API for query: What is the date today?
+2025-01-07 16:32:00,537 - database_query_system - INFO - Tavily API call successful
+2025-01-07 16:32:00,537 - database_query_system - INFO - Non-DB Query - Tavily Response Used
+2025-01-07 16:32:00,538 - database_query_system - INFO - Question Processing Complete
+2025-01-07 19:18:58,880 - database_query_system - INFO - Processing New Question: Hello. What is the weather like in Karachi
+2025-01-07 19:19:00,467 - database_query_system - INFO - Query Classification - Input: Hello. What is the weather like in Karachi - Is DB Related: False
+2025-01-07 19:19:00,471 - database_query_system - INFO - Calling Tavily API for query: Hello. What is the weather like in Karachi
+2025-01-07 19:19:05,488 - database_query_system - INFO - Tavily API call successful
+2025-01-07 19:19:05,488 - database_query_system - INFO - Non-DB Query - Tavily Response Used
+2025-01-07 19:19:05,490 - database_query_system - INFO - Question Processing Complete
+2025-01-07 19:19:24,701 - database_query_system - INFO - Processing New Question: I want the count of products
+2025-01-07 19:19:25,648 - database_query_system - INFO - Query Classification - Input: I want the count of products - Is DB Related: True
+2025-01-07 19:19:26,565 - database_query_system - INFO - Generated SQL Query: SELECT COUNT(*) FROM products;
+2025-01-07 19:19:26,566 - database_query_system - INFO - Executing SQL Query: SELECT COUNT(*) FROM products;
+2025-01-07 19:19:26,576 - database_query_system - INFO - Query Execution Successful - Result Shape: (1, 1)
+2025-01-07 19:19:27,444 - database_query_system - INFO - DB Query - Interpretation Complete
+2025-01-07 19:19:27,445 - database_query_system - INFO - Question Processing Complete
